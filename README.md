@@ -20,7 +20,7 @@ To run the $\textit{NKmodelSimulations.ipynb}$ file on Google Colab, follow thes
 3. Upload both the files to this folder. Make sure that you upload the toolkit file with exactly the same name i.e. $\textit{REmodelToolkit.py}$.
 4. Open the $\textit{NKmodelSimulations.ipynb}$ file.
 5. Connect and run the cells under SET PATH FOR TOOLKIT IN GOOGLE DRIVE.
-   If you get an error, it could be because: i) you did not give all the permissions when you were prompted; ii) you uploaded the toolkit file with a name than $\textit{REmodelToolkit.py}$; iii) you did not upload the toolkit file in the Colab Notebooks folder in My Drive. 
+   If you get an error, it could be because: i) you did not give all the permissions when you were prompted; ii) you uploaded the toolkit file with a different name than $\textit{REmodelToolkit.py}$; iii) you did not upload the toolkit file in the Colab Notebooks folder in My Drive. 
 7. Import the libraries.
 
 You are now good to go!

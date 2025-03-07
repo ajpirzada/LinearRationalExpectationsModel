@@ -15,7 +15,7 @@ Have both the files in the same folder before running the file $\textit{NKmodelS
 ### Using Google Colab
 To run the $\textit{NKmodelSimulations.ipynb}$ file on Google Colab, follow these steps: 
 
-1. Go to your google drive (online).
+*1.* Go to your google drive (online).
 2. Under My Drive, there will be a folder called Colab Notebooks. If not, create one.
 3. Upload both the files to this folder. Make sure that you upload the toolkit file with exactly the same name i.e. $\textit{REmodelToolkit.py}$.
 4. Open the $\textit{NKmodelSimulations.ipynb}$ file.

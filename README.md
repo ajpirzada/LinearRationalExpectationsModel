@@ -34,7 +34,7 @@ drive.mount('/content/drive')
 # These two lines ensure Python can find and import custom modules (e.g REmodelToolkit.py) located within your 'Colab Notebooks' folder in Google Drive, making them available to use in the notebook.
 import sys
 sys.path.append('/content/drive/My Drive/Colab Notebooks')
-'''python
+```python
 
 If you get an error, it could be because: i) you did not give all the permissions when you were prompted; ii) you uploaded the toolkit file with a different name than $\textit{REmodelToolkit.py}$; iii) you did not upload the toolkit file in the Colab Notebooks folder in My Drive. 
 7. Import the libraries.

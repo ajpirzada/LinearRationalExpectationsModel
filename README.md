@@ -3,16 +3,16 @@ This project shows how to use Chris Sim's gensys algorithm to solve a linear rat
 
 ## What files do we have
 
-- The file *REmodelToolkit.py* includes the Python version of Chris Sims gensys algorithm.
-- The file *NKmodelSimulations.ipynb* sets up a three equation New Keynesian model in the form that is consistent with the gensys alogorithm. It then uses the algorithm to solve the model.
+- The file **REmodelToolkit.py** includes the Python version of Chris Sims gensys algorithm.
+- The file **NKmodelSimulations.ipynb** sets up a three equation New Keynesian model in the form that is consistent with the gensys alogorithm. It then uses the algorithm to solve the model.
 
 ## Usage
 You can either run the project on your machine using softwares like VS Studio, Anaconda etc. or on Google Colab.
 
-### On your machine
+### 1. On your Machine
 Have both the files in the same folder before running the file **NKmodelSimulations.ipynb**. Make sure that the toolkit file has exactly the same name i.e. **REmodelToolkit.py**.
 
-### Using Google Colab
+### 2. Using Google Colab
 To run the **NKmodelSimulations.ipynb** file on Google Colab, follow these steps: 
 
 1. Go to your google drive (online).
@@ -34,7 +34,6 @@ drive.mount('/content/drive')
 # These two lines ensure Python can find and import custom modules (e.g REmodelToolkit.py) located within your 'Colab Notebooks' folder in Google Drive, making them available to use in the notebook.
 import sys
 sys.path.append('/content/drive/My Drive/Colab Notebooks')
-
 
 ```markdown
 If you get an error, it could be because: i) you did not give all the permissions when you were prompted; ii) you uploaded the toolkit file with a different name than $\textit{REmodelToolkit.py}$; iii) you did not upload the toolkit file in the Colab Notebooks folder in My Drive. 

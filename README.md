@@ -24,13 +24,17 @@ To run the $\textit{NKmodelSimulations.ipynb}$ file on Google Colab, follow thes
 ```python
 # This line imports the necessary functionality to interact with your Google Drive from within the Colab notebook.
 from google.colab import drive
+
 # This line makes sure that your Google Drive files are accessible within the notebook
 drive.mount('/content/drive')
-# These two lines ensure Python can find and import custom modules (e.g REmodelToolkit.py) located within your 'Colab Notebooks' folder in Google Drive, making them available to use in the notebook.
+
 # This command lists the files and directories inside the "Colab Notebooks" folder located in your Google Drive. You should see REmodelToolkit.py here.
 !ls "/content/drive/My Drive/Colab Notebooks"
+
+# These two lines ensure Python can find and import custom modules (e.g REmodelToolkit.py) located within your 'Colab Notebooks' folder in Google Drive, making them available to use in the notebook.
 import sys
 sys.path.append('/content/drive/My Drive/Colab Notebooks')
+'''python
 
 If you get an error, it could be because: i) you did not give all the permissions when you were prompted; ii) you uploaded the toolkit file with a different name than $\textit{REmodelToolkit.py}$; iii) you did not upload the toolkit file in the Colab Notebooks folder in My Drive. 
 7. Import the libraries.

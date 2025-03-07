@@ -1,4 +1,4 @@
-# Rational Expectations model
+# Linear Rational Expectations model
 This project shows how to use Chris Sim's gensys algorithm to solve a linear rational expectations model. 
 
 ## Files
@@ -42,4 +42,7 @@ sys.path.append('/content/drive/My Drive/Colab Notebooks')
   - You did not upload the toolkit file in the Colab Notebooks folder in My Drive.
 
 Fix it. You are now good to go!
+
+## Chris Sims (2001) Gensys algorithm
+
 

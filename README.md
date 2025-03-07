@@ -36,7 +36,11 @@ import sys
 sys.path.append('/content/drive/My Drive/Colab Notebooks')
 ```
 
-If you get an error, it could be because: i) you did not give all the permissions when you were prompted; ii) you uploaded the toolkit file with a different name than $\textit{REmodelToolkit.py}$; iii) you did not upload the toolkit file in the Colab Notebooks folder in My Drive. 
+If you get an error, it could be because: 
+- You did not give all the permissions when you were prompted.
+- You uploaded the toolkit file with a different name than **{REmodelToolkit.py**.
+- You did not upload the toolkit file in the Colab Notebooks folder in My Drive.
+
 7. Import the libraries.
 
 You are now good to go!

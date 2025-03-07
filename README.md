@@ -10,15 +10,15 @@ This project shows how to use Chris Sim's gensys algorithm to solve a linear rat
 You can either run the project on your machine using softwares like VS Studio, Anaconda etc. or on Google Colab.
 
 ### On your machine
-Have both the files in the same folder before running the file $\textit{NKmodelSimulations.ipynb}$. Make sure that the toolkit file has exactly the same name i.e. $\textit{REmodelToolkit.py}$.
+Have both the files in the same folder before running the file **NKmodelSimulations.ipynb**. Make sure that the toolkit file has exactly the same name i.e. **REmodelToolkit.py**.
 
 ### Using Google Colab
-To run the $\textit{NKmodelSimulations.ipynb}$ file on Google Colab, follow these steps: 
+To run the **NKmodelSimulations.ipynb** file on Google Colab, follow these steps: 
 
 1. Go to your google drive (online).
 2. Under My Drive, there will be a folder called Colab Notebooks. If not, create one.
-3. Upload both the files to this folder. Make sure that you upload the toolkit file with exactly the same name i.e. $\textit{REmodelToolkit.py}$.
-4. Open the $\textit{NKmodelSimulations.ipynb}$ file.
+3. Upload both the files to this folder. Make sure that you upload the toolkit file with exactly the same name i.e. **REmodelToolkit.py**.
+4. Open the **NKmodelSimulations.ipynb** file.
 5. Connect and run the cells under SET PATH FOR TOOLKIT IN GOOGLE DRIVE.
 
 ```python

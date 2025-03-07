@@ -41,7 +41,5 @@ sys.path.append('/content/drive/My Drive/Colab Notebooks')
   - You uploaded the toolkit file with a different name than **{REmodelToolkit.py**.
   - You did not upload the toolkit file in the Colab Notebooks folder in My Drive.
 
-6. Import the libraries.
-
-You are now good to go!
+Fix it. You are now good to go!
 

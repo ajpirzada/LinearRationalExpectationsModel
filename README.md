@@ -168,7 +168,7 @@ C = \bigg[ \begin{matrix} 0
 
 <br />
 
-where $y = {[x, \pi, i, u, a, m, z^{x}, z^{\pi}]}^{T}$, $\epsilon = {[\hat{u}, \hat{a}, \hat{m}]}^{T}$, and $\eta = {[\eta^{x}, \eta^{\pi}]}^{T}$.
+where $y = {[x, \pi, i, u, a, m, z^{x}, z^{\pi}]}^{T}$, $\epsilon = {[\epsilon^{u}, \epsilon^{a}, \epsilon^{m}]}^{T}$, and $\eta = {[\eta^{x}, \eta^{\pi}]}^{T}$.
 
 ### Section 2-8: Solving and analysing the model economy
 

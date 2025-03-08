@@ -60,8 +60,8 @@ where:
 - `G1_sol` is the transition matrix mapping past states to current states.
 - `C_vec` is the vector of constants.
 - `Impact` determines how shocks influence the system.
-- `gev` contains the **generalised eigenvalues**, which help assess stability.
-- `eu` (existence and uniqueness flags) indicate whether a unique solution exists.
+
+The solution also includes `gev` which contains the **generalised eigenvalues** and `eu` which reports whether the solution exits and, if it exists, whether it is unique. 
 
 ## EXAMPLE: New Keynesian model
 

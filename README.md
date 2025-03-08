@@ -47,7 +47,10 @@ Fix it. You are now good to go!
 
 The function `gensys` solves a **linear rational expectations model** of the form:
 
-G0 * y_t = G1 * y_{t-1} + C + Psi * epsilon_t + Pi * eta_t
+```latex
+\begin{equation}
+G_{0} * y_{t} = G_{1} * y_{t-1} + C + \Psi * \epsilon_{t} + \Pi * \eta_{t}
+\end{equation}
 
 The solution takes the form:
 

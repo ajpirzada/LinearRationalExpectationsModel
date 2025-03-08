@@ -142,6 +142,7 @@ C = \bigg[ \begin{matrix} 0
 \\\ \bar{r} + (1 - \chi_{\pi})*\bar{\pi}
 \\\ 0
 \\\ 0
+\\\ 0
 \end{matrix} \bigg]; \quad
 
 \Pi = \bigg[ \begin{matrix} 1 &0
@@ -151,9 +152,11 @@ C = \bigg[ \begin{matrix} 0
 \\\ 0 &0
 \\\ 0 &0
 \\\ 0 &0
+\\\ 0 &0
 \end{matrix} \bigg]; \quad
 
 \Psi = \bigg[ \begin{matrix} 0 &0 &0
+\\\ 0 &0 &0
 \\\ 0 &0 &0
 \\\ 0 &0 &0
 \\\ 0 &0 &0

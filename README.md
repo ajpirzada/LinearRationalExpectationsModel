@@ -9,7 +9,7 @@ This project makes availabel the Python version of Chris Sims (2001) gensys algo
 You can either run the project on your machine using softwares like VS Studio, Anaconda etc. or on Google Colab.
 
 ### 1. On your Machine
-Have both the files in the same folder before running the file **NKmodelSimulations.ipynb**. Make sure that the toolkit file has exactly the same name i.e. **REmodelToolkit.py**.
+Have both files in the same folder before running the script **NKmodelSimulations.ipynb**. Make sure that the toolkit file has exactly the same name i.e. **REmodelToolkit.py**. You do not need to run the cells under SET PATH FOR TOOLKIT IN GOOGLE DRIVE. Instead, start from IMPORT PYTHON LIBRARIES.
 
 ### 2. Using Google Colab
 To run the **NKmodelSimulations.ipynb** file on Google Colab, follow these steps: 

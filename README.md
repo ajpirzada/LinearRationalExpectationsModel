@@ -53,7 +53,9 @@ G_{0} * y_{t} = G_{1} * y_{t-1} + C + \Psi * \epsilon_{t} + \Pi * \eta_{t}
 
 Much of the hardwork goes into writing your linear rational expectations model in this form. Section 1 in **NKmodelSimulations.ipynb** shows how to do it for a three equation New Keynesian model. The trick is to define auxiliary variables for each of the forward looking variable in the model i.e. for expected inflation and expected output gap. Once you have you matrices (G0, G1, C, Psi, PI), you can use the gensys function from REmodelToolkit.py to solve your RE model. The solution to your model takes the following form:
 
-y_t = G1_sol * y_{t-1} + C_vec + Impact * epsilon_t
+```latex
+y_{t} = G1_{sol} * y_{t-1} + C_vec + Impact * \epsilon_{t}
+```
 
 where:
 - `G1_sol` is the transition matrix mapping past states to current states.

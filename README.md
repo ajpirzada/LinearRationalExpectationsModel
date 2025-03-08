@@ -38,7 +38,7 @@ sys.path.append('/content/drive/My Drive/Colab Notebooks')
 
   If you get an error, it could be because: 
   - You did not give all the permissions when you were prompted to do so.
-  - You uploaded the toolkit file with a different name than **{REmodelToolkit.py**.
+  - You uploaded the toolkit file with a different name than **REmodelToolkit.py**.
   - You did not upload the toolkit file in the Colab Notebooks folder in My Drive.
 
 Fix it. You are now good to go!
@@ -48,11 +48,10 @@ Fix it. You are now good to go!
 The function `gensys` solves a **linear rational expectations model** of the form:
 
 ```latex
-\begin{equation}
 G_{0} * y_{t} = G_{1} * y_{t-1} + C + \Psi * \epsilon_{t} + \Pi * \eta_{t}
-\end{equation}
+```
 
-The solution takes the form:
+Much of the hardwork goes into writing your linear rational expectations model in this form. Section 1 in **NKmodelSimulations.ipynb** shows how to do it for a three equation New Keynesian model. The trick is to define auxiliary variables for each of the forward looking variable in the model i.e. for expected inflation and expected output gap. Once you have you matrices (G0, G1, C, Psi, PI), you can use the gensys function from REmodelToolkit.py to solve your RE model. The solution to your model takes the following form:
 
 y_t = G1_sol * y_{t-1} + C_vec + Impact * epsilon_t
 

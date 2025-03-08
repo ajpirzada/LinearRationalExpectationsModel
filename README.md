@@ -45,4 +45,17 @@ Fix it. You are now good to go!
 
 ## Chris Sims (2001) Gensys algorithm
 
+The function `gensys` solves a **linear rational expectations model** of the form:
 
+G0 * y_t = G1 * y_{t-1} + C + Psi * epsilon_t + Pi * eta_t
+
+The solution takes the form:
+
+y_t = G1_sol * y_{t-1} + C_vec + Impact * epsilon_t
+
+where:
+- `G1_sol` is the transition matrix mapping past states to current states.
+- `C_vec` is the vector of constants.
+- `Impact` determines how shocks influence the system.
+- `gev` contains the **generalised eigenvalues**, which help assess stability.
+- `eu` (existence and uniqueness flags) indicate whether a unique solution exists.

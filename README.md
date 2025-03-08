@@ -1,5 +1,5 @@
 # Linear Rational Expectations model
-This project shows how to use Chris Sim's gensys algorithm to solve a linear rational expectations model. 
+This project uses a New Keynesian model as an example to show how to use Chris Sim's gensys algorithm to solve a linear rational expectations model. In doing so, I also make available the Python version of the gensys algorithm to the broader community.
 
 ## Files
 

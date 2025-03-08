@@ -83,7 +83,7 @@ where $\epsilon_{t}^{j}$ are i.i.d. shocks ($j \in \{ u, \pi, i \}$) with mean z
 The **NKmodelSimulations.ipynb** file is divided into several sections. Arguably, the most critical is section 1. Recall, gensys requires the model to be in the following form:
 
 ```math
-G0 y_{t} = C + G1 y_{t-1} + \Psi * \epsilon_{t} + \Pi \eta_{t}
+G0 y_{t} = C + G1 y_{t-1} + \Psi \epsilon_{t} + \Pi \eta_{t}
 ```
 
 ### Section 1: Setup the matrices defining your model

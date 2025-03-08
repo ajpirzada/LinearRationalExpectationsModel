@@ -170,6 +170,6 @@ C = \bigg[ \begin{matrix} 0
 
 where $y = {[x, \pi, i, u, a, m, z^{x}, z^{\pi}]}^{T}$, $\epsilon = {[\hat{u}, \hat{a}, \hat{m}]}^{T}$, and $\eta = {[\eta^{x}, \eta^{\pi}]}^{T}$.
 
-### Section 2-7: Solving and analysing the model economy
+### Section 2-8: Solving and analysing the model economy
 
 **Section 2** uses the gensys algorithm to solve the model. **Section 3** explicitly reports the solution for each endogenous variable in the model. **Section 4** reports the variance-covariance matrix. **Section 5** plots impulse responses to each of the shock considered in the model. **Section 6** simulates the model economy by generating a series of i.i.d. shocks for all three shocks considered here. The i.i.d. shocks are drawn from a normal distribution with mean zero and standard deviation, $\sigma_{\hat{j}}$. **Section 7** reports variance decomposition over different forecast horizon. Finally, **section 8** reports historical decomposition showing the contribution of each of the shock in driving fluctuations in endogenous variables over the simulation period.

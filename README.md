@@ -104,7 +104,7 @@ The transformed version of the model has 8 equations: 3 for $x$, $\pi$, and $i$;
 1. **Auxiliary variable 1**: $x_{t} = z_{t-1}^{x} + \eta_{t}^{x}$
 2. **Auxiliary variable 2**: $\pi_{t} = z_{t-1}^{\pi} + \eta_{t}^{\pi}$
 3. **IS curve**: $x_{t} + \varphi i_{t} + a_{t} - \beta z_{t}^{x} - \varphi z_{t}^{\pi} = \varphi\bar{r}$
-4. **NKPC curve**: $-\lambda x_{t} + \pi_{t} - \beta z_{t}^{\pi} - u_{t} = (1-\beta)\bar{\pi}$
+4. **NKPC curve**: $-\lambda x_{t} + \pi_{t} - u_{t} - \beta z_{t}^{\pi} = (1-\beta)\bar{\pi}$
 5. **Taylor rule**: $-\chi_{x}x_{t} - \chi_{\pi}\pi_{t} + i_{t} - m_{t} = \bar{r} + (1 - \chi_{pi})*\bar{\pi}$
 6. **Cost shock**: $u_{t} = \rho_{u}u_{t-1} + \epsilon_{t}^{u}$
 7. **Prod shock**: $a_{t} = \rho_{a}a_{t-1} + \epsilon_{t}^{a}$
@@ -112,7 +112,60 @@ The transformed version of the model has 8 equations: 3 for $x$, $\pi$, and $i$;
 
 Note, the two equations for auxiliary variables also include expectation errors, $\eta_{t}^{x}$ and $\eta_{t}^{\pi}$. These are critical to solving a rational expectations model. Gensys solves the linear rational expectations model such that the expectations error equal zero on average. 
 
-We can now write this system of equations in matrix form as is required by the gensys algorithm. The vector $y$ includes ${[x, \pi, i, u, a, m, \eta^{x}, \eta^{\pi}]}^{T}$.
+We can now write this system of equations in matrix form as is required by the gensys algorithm. Specifically,
+
+```math
+G0 = \bigg[ \begin{matrix} 1 &0 &0 &0 &0 &0 &0 &0
+\\\ 0 &1 &0 &0 &0 &0 &0 &0
+\\\ 1 &0 &\varphi &0 &0 &1 &-\beta &-\varphi
+\\\ -\lambda &1 &0 &-1 &0 &0 &0 &-\beta
+\\\ -\chi_{x} &-\chi_{\pi} &1 &0 &0 &1 &0 &0
+\\\ 0 &0 &0 &1 &0 &0 &0 &0
+\\\ 0 &0 &0 &0 &1 &0 &0 &0
+\\\ 0 &0 &0 &0 &0 &1 &0 &0
+\end{matrix} \bigg]; \quad
+
+G1 = \bigg[ \begin{matrix} 0 &0 &0 &0 &0 &0 &1 &0
+\\\ 0 &0 &0 &0 &0 &0 &0 &1
+\\\ 0 &0 &0 &0 &0 &0 &0 &0
+\\\ 0 &0 &0 &0 &0 &0 &0 &0
+\\\ 0 &0 &0 &0 &0 &0 &0 &0
+\\\ 0 &0 &0 &\rho_{u} &0 &0 &0 &0
+\\\ 0 &0 &0 &0 &\rho_{\pi} &0 &0 &0
+\\\ 0 &0 &0 &0 &0 &\rho_{m} &0 &0
+\end{matrix} \bigg]; \quad
+
+C = \bigg[ \begin{matrix} 0
+\\\ 0
+\\\ \varphi\bar{r}
+\\\ (1-\beta)\bar{\pi}
+\\\ \bar{r} + (1 - \chi_{\pi})*\bar{\pi}
+\\\ 0
+\\\ 0
+\end{matrix} \bigg]; \quad
+
+\Pi = \bigg[ \begin{matrix} 1 &0
+\\\ 0 &1
+\\\ 0 &0
+\\\ 0 &0
+\\\ 0 &0
+\\\ 0 &0
+\\\ 0 &0
+\end{matrix} \bigg]; \quad
+
+\Psi = \bigg[ \begin{matrix} 0 &0 &0
+\\\ 0 &0 &0
+\\\ 0 &0 &0
+\\\ 0 &0 &0
+\\\ 0 &0 &0
+\\\ 0 &0 &0
+\\\ 0 &0 &0
+\end{matrix} \bigg];
+```
+
+<br />
+
+where $y = {[x, \pi, i, u, a, m, z^{x}, z^{\pi}]}^{T}$, $\epsilon = {[\hat{u}, \hat{a}, \hat{m}]}^{T}$, and $\eta = {[\eta^{x}, \eta^{\pi}]}^{T}$.
 
 ### Section 2-7: Solving and analysing the model economy
 

@@ -51,7 +51,7 @@ The function `gensys` solves a **linear rational expectations model** of the for
 G_{0} * y_{t} = G_{1} * y_{t-1} + C + \Psi * \epsilon_{t} + \Pi * \eta_{t}
 ```
 
-Much of the hardwork goes into writing your linear rational expectations model in this form. Section 1 in **NKmodelSimulations.ipynb** shows how to do it for a three equation New Keynesian model. The trick is to define auxiliary variables for each of the forward looking variable in the model i.e. for expected inflation and expected output gap. Once you have you matrices (G0, G1, C, Psi, PI), you can use the gensys function from REmodelToolkit.py to solve your RE model. The solution to your model takes the following form:
+Much of the hardwork goes into writing your linear rational expectations model in this form. Section 1 in **NKmodelSimulations.ipynb** shows how to do it for a three equation New Keynesian model. The trick is to define auxiliary variables for each of the forward looking variable in the model i.e. for expected inflation and expected output gap. Once you have your matrices (G0, G1, C, Psi, PI), you can use the gensys function from **REmodelToolkit.py** to solve your RE model. The solution to your model takes the following form:
 
 ```latex
 y_{t} = G1_{sol} * y_{t-1} + C_vec + Impact * \epsilon_{t}

@@ -1,5 +1,5 @@
 # Linear Rational Expectations model
-This project makes availabel the Python version of Chris Sims (2001) gensys algorithm to broader community. I also show how the algorithm can be used to solve a New Keynesian model and further analyse the economy.
+This project makes available the Python version of Chris Sims (2001) gensys algorithm to broader community. I also show how the algorithm can be used to solve a New Keynesian model and further analyse the economy.
 ## Files
 
 - The file **REmodelToolkit.py** includes the Python version of Chris Sims gensys algorithm.

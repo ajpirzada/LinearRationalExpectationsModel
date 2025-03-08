@@ -90,7 +90,7 @@ G0 y_{t} = C + G1 y_{t-1} + \Psi \epsilon_{t} + \Pi \eta_{t}
 
 Section 1 is where you setup the matrices that define your model i.e. G0, G1, $\Psi$, and $\Pi$. Note, however, the NK model defined above has two forward looking variables, $E_{t}x_{t+1}$ and $E_{t}\pi_{t+1}$. In contrast, the gensys algorithm only takes as input matrices associated with current and previous period variables, $y_{t}$ and $y_{t-1}$, and those associated with $\epsilon_{t}$ and $\eta_{t}$. 
 
-To transform the model, you should define an auxiliary variable for each of the forward looking variables:
+To transform the model, you should start with defining an auxiliary variable for each of the forward looking variables:
 
 ```math
 z_{t}^{x} = E_{t}x_{t+1}
@@ -99,7 +99,7 @@ z_{t}^{x} = E_{t}x_{t+1}
 z_{t}^{\pi} = E_{t}\pi_{t+1}
 ```
 
-The transformed version of the model has 8 equations: 3 for $x$, $\pi$, and $i$; 3 for the shocks; and 2 for the auxiliary variables. Let's write the transformed model:
+The transformed version of the model now has 8 equations: 3 for $x$, $\pi$, and $i$; 3 for the shocks; and 2 for the auxiliary variables. Let's write the transformed model:
 
 1. **Auxiliary variable 1**: $x_{t} = z_{t-1}^{x} + \eta_{t}^{x}$
 2. **Auxiliary variable 2**: $\pi_{t} = z_{t-1}^{\pi} + \eta_{t}^{\pi}$
